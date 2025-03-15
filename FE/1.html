@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lớp Học Trực Tuyến</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--HEADER-->
+    <div class="header">
+      <div class="header-left">
+        <div class="time" id="currentTime">08:17</div>
+        <div class="meeting-id">Mã lớp: sij-tjzy-biy</div>
+      </div>
+      <div class="header-right">
+        <div class="participants-count" id="participantsCount">0 người</div>
+      </div>
+    </div>
+
+    <!--MAIN-->
+    <div class="main">
+      <div class="video-grid" id="videoGrid">
+        <!-- Các video-container sẽ được thêm động trong JavaScript -->
+      </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="footer">
+      <button id="btnMic" title="Bật/tắt micro">🎤</button>
+      <button id="btnCamera" title="Bật/tắt camera">🎥</button>
+      <button id="btnChat" title="Mở chat">💬</button>
+      <button id="btnShare" title="Chia sẻ màn hình">🖥️</button>
+      <button id="btnParticipants" title="Xem danh sách học viên">👥</button>
+      <button class="btn-emotion" id="btnEmotion" title="Nhận dạng cảm xúc">
+        🧠
+      </button>
+      <button class="btn-end-call" id="btnEndCall" title="Kết thúc cuộc họp">
+        📴
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

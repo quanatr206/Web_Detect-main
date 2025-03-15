@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lớp Học Trực Tuyến - Học Sinh</title>
+    <link rel="stylesheet" href="camera.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="meeting-info">
+        <span id="currentTime">00:00</span> | Mã lớp: sij-tjzy-biy
+      </div>
+      <div class="student-profile">
+        <img src="avatar.png" alt="Avatar" id="studentAvatar" />
+        <span id="studentName">Học Viên</span>
+      </div>
+    </div>
+
+    <!-- VIDEO CONTAINER -->
+    <div class="video-container">
+      <video id="studentVideo" autoplay></video>
+      <div class="emotion-overlay" id="emotionOverlay">😊</div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <button id="btnMic" title="Bật/tắt micro">🎤</button>
+      <button id="btnCamera" title="Bật/tắt camera">🎥</button>
+      <button id="btnEmotion" title="Nhận dạng cảm xúc">🧠</button>
+      <button id="btnEndCall" title="Rời khỏi lớp">📴</button>
+    </div>
+
+    <script src="camera.js"></script>
+  </body>
+</html>

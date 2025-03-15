@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thông tin cấu hình máy người dùng</title>
+</head>
+<body>
+    <h1>Thông tin cấu hình máy người dùng</h1>
+    <p id="userAgent"></p>
+    <p id="platform"></p>
+    <script>
+        // Gọi API để lấy thông tin cấu hình máy người dùng
+        async function fetchData(item_id) {
+            const response = await fetch(`http://127.0.0.1:8000/items/${item_id}`);
+            const data = await response.json();
+            document.getElementById('result').textContent = JSON.stringify(data);
+        }
+        fetchData(42);
+    </script>
+</body>
+</html>

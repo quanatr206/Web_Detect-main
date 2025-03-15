@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chọn Mô Hình AI</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f0f2f5;
+      }
+      .container {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 20px 30px;
+        max-width: 400px;
+        width: 100%;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      .model-option {
+        margin-bottom: 10px;
+      }
+      .model-option label {
+        margin-left: 5px;
+        color: #555;
+      }
+      .btn-submit {
+        margin-top: 20px;
+        background: #007bff;
+        color: #fff;
+        border: none;
+        padding: 12px;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .btn-submit:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Chọn Mô Hình AI</h1>
+      <form action="upload.html" method="get">
+        <div class="model-option">
+          <input type="radio" id="nano" name="model" value="nano" required />
+          <label for="nano">Nano</label>
+        </div>
+        <div class="model-option">
+          <input type="radio" id="small" name="model" value="small" />
+          <label for="small">Small</label>
+        </div>
+        <div class="model-option">
+          <input type="radio" id="medium" name="model" value="medium" />
+          <label for="medium">Medium</label>
+        </div>
+
+        <button type="submit" class="btn-submit">Tiếp tục</button>
+      </form>
+    </div>
+  </body>
+</html>

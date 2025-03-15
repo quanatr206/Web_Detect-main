@@ -1,0 +1,36 @@
+# Thư viện FastAPI và server
+fastapi==0.104.1
+uvicorn==0.23.2
+python-multipart==0.0.6
+python-dotenv==1.0.0
+
+# Cơ sở dữ liệu
+sqlalchemy==2.0.22
+pymysql==1.1.0
+cryptography==41.0.4
+
+# Xử lý video và hình ảnh
+opencv-python==4.8.1.78
+numpy==1.26.0
+
+# TensorRT và CUDA
+tensorrt==8.6.1
+pycuda==2022.2.2
+
+# Thông tin hệ thống
+psutil==5.9.6
+py-cpuinfo==9.0.0
+gputil==1.4.0
+
+# Xử lý token và bảo mật
+python-jose==3.3.0
+passlib==1.7.4
+bcrypt==4.0.1
+pydantic==2.4.2
+email-validator==2.0.0
+
+
+set PYTHONPATH=%cd%
+
+cd my_project
+python -m module2.file2

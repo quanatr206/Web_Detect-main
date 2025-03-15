@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Dữ Liệu</title>
+    <style>
+      /* Reset & font chung */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #f0f2f5;
+      }
+
+      .container {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        max-width: 800px;
+        width: 100%;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      /* Bố cục chứa các tùy chọn */
+      .option-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      /* Thẻ hiển thị một lựa chọn */
+      .option-card {
+        background: #fafafa;
+        border-radius: 8px;
+        width: 220px;
+        text-align: center;
+        padding: 20px;
+        cursor: pointer;
+        transition: box-shadow 0.3s, transform 0.3s;
+        position: relative;
+      }
+
+      .option-card:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transform: translateY(-4px);
+      }
+
+      .option-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #007bff;
+      }
+
+      .option-desc {
+        font-size: 0.9rem;
+        color: #555;
+        line-height: 1.4;
+        margin-bottom: 10px;
+      }
+
+      /* Nút ẩn (nếu cần) hoặc link */
+      .option-card a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        background: #007bff;
+        padding: 8px 16px;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+      .option-card a:hover {
+        background: #0056b3;
+      }
+
+      /* Responsive nhỏ */
+      @media (max-width: 480px) {
+        .option-row {
+          flex-direction: column;
+          align-items: center;
+        }
+        .option-card {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tuỳ Chọn Xử Lý</h1>
+      <div class="option-row">
+        <!-- Tải Ảnh -->
+        <div class="option-card">
+          <div class="option-title">Tải Ảnh</div>
+          <div class="option-desc">
+            Chọn file ảnh (.jpg hoặc .png...) từ thiết bị để hệ thống xử lý.
+          </div>
+          <a href="uploadImage.html">Tiếp tục</a>
+        </div>
+
+        <!-- Tải Video -->
+        <div class="option-card">
+          <div class="option-title">Tải Video</div>
+          <div class="option-desc">
+            Chọn file video (.mp4, .mov...) để tiến hành phân tích cảm xúc.
+          </div>
+          <a href="uploadVideo.html">Tiếp tục</a>
+        </div>
+
+        <!-- Mở Camera -->
+        <div class="option-card">
+          <div class="option-title">Mở Camera</div>
+          <div class="option-desc">
+            Bật webcam để nhận diện và theo dõi cảm xúc theo thời gian thực.
+          </div>
+          <a href="camera.html">Tiếp tục</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
